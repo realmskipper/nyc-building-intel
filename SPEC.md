@@ -13,9 +13,18 @@ Just: search → see score → pay for full report.
 
 **Stack:**
 - FastAPI backend (proxies Socrata API on demand — no DB needed yet)
-- Simple web frontend (plain HTML/CSS/JS — no React)
+- React + TypeScript (Vite) — modern, component-based, easy to extend later
+- Tailwind CSS for styling
 - Stripe for $6.99 report purchase
 - PDF generation (WeasyPrint or similar)
+
+**Design:**
+- Color scheme: Black (#0a0a0a) + Electric Blue (#0066FF / #00AAFF)
+- Aesthetic: sleek data-intelligence — think Bloomberg terminal meets modern SaaS
+- Dark background, glowing blue accents, clean sans-serif typography
+- Health score displayed as a large glowing letter grade (A–F)
+- Card-based layout for violations, complaints, permits
+- Subtle animations on score reveal
 
 **Realistic build time: 1–2 weeks**
 
@@ -399,3 +408,4 @@ PostgreSQL DB      NYC Open Data
 - [ ] Web framework preference (React / Next.js / plain HTML)?
 - [ ] App name / branding (nyc-building-intel is a working title)
 - [ ] Stripe account setup
+
