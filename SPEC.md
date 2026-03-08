@@ -1,3 +1,32 @@
+## 🚀 Lean MVP (Build First)
+
+> Prove willingness to pay before building anything else.
+
+**The smallest thing that could work:**
+1. Address search bar (text input)
+2. Building profile — health score (A–F), open violations, recent 311 complaints, active permits
+3. "Get Full Report" button — $6.99 one-time via Stripe, generates PDF
+
+**No map. No accounts. No watchlist. No alerts. No iOS app.**
+
+Just: search → see score → pay for full report.
+
+**Stack:**
+- FastAPI backend (proxies Socrata API on demand — no DB needed yet)
+- Simple web frontend (plain HTML/CSS/JS — no React)
+- Stripe for $6.99 report purchase
+- PDF generation (WeasyPrint or similar)
+
+**Realistic build time: 1–2 weeks**
+
+**Why web first:**
+- No App Store review delays — ship and iterate same day
+- Stripe payment flow is trivial on web
+- Apartment hunters are already on laptops browsing StreetEasy
+- iOS app comes after the web version proves people pay for reports
+
+---
+
 # NYC Building Intel — Product Spec
 
 ## Vision
